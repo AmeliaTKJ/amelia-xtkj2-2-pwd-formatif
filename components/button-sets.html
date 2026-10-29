@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button-sets</title>
+  
+  <style>
+    
+    body {
+      background-color: #f4f6f9; 
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      margin: 0;
+    }
+
+    
+    h2 {
+      color: #1a252c;
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.2s; 
+    }
+
+    
+    .button-group .btn {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: none;
+    }
+
+    
+    .btn-primary {
+      background-color: rgb(45, 45, 148); 
+      color: #ffffff;
+    }
+
+    .btn-secondary {
+      background-color: rgb(210, 220, 235); 
+    }
+
+    .btn-outline {
+      background-color: #ffffff;
+      border: 2px solid #1a252c !important; 
+    }
+
+    .btn-send {
+      background-color: rgba(43, 163, 83, 0.9); 
+      color: #ffffff;
+    }
+
+    .btn-secondary, .btn-outline {
+      color: #1a252c;
+    }
+
+    .btn-primary:hover {
+      background-color: #0f1d2e;
+    }
+
+    .btn-secondary:hover {
+      background-color: rgb(190, 202, 220);
+    }
+
+    .btn-outline:hover {
+      background-color: #e2e8f0;
+    }
+
+    .btn-send:hover {
+      background-color: rgb(54, 131, 70);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #4a3b8c;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Button Set</h2>
+  <div class="button-group">
+    <a href="#" class="btn btn-primary">Lihat Proyek</a>
+    <a href="#" class="btn btn-secondary">Unduh CV</a>
+    <a href="#" class="btn btn-outline">Hubungi Saya</a>
+    <a href="#" class="btn btn-send">Kirim Pesan</a>
+  </div>
+
+  <div>
+    <a href="#" class="back-link">Kembali ke Beranda</a>
+  </div>
+
+</body>
+</html>
