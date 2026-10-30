@@ -1,0 +1,106 @@
+<!-- 
+  Perhitungan Lebar Kartu (.card) jika box-sizing TIDAK diatur (content-box):
+  - Lebar Konten = 320px
+  - Padding Kiri + Kanan = 20px + 20px = 40px
+  - Border Kiri + Kanan = 2px + 2px = 4px
+  -------------------------------------------------------------
+  Total Lebar Keseluruhan Kartu = 320px + 40px + 4px = 364px
+  
+  Catatan: Karena saya menggunakan 'box-sizing: border-box', maka total lebar kartu
+  di Inspect Element tetap terukur tepat 320px.
+-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kartu Portofolio Proyek</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: #f1f5f9;
+      font-family: 'Poppins', Arial, sans-serif;
+      padding-top: 20px;
+    }
+
+    .card {
+      width: 320px;
+      padding: 20px;
+      border: 2px solid #0f172a;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border-radius: 12px; /* Sentuhan desain modern membulat */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Efek bayangan halus */
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      display: block;
+      object-fit: cover; 
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      color: #0f172a;
+      margin-top: 16px;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .card a {
+      display: inline-block;
+      color: #2563eb; 
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-nav {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+
+    .footer-nav a {
+      color: #64748b;
+      text-decoration: underline;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Kartu Proyek -->
+  <div class="card">
+    <img src="../assets/images/membuat DIY.jpeg" alt="Proyek Membuat DIY">
+    <h3>Proyek Panduan DIY</h3>
+    <p>
+      Kumpulan ide membuat kerajinan tangan mandiri yang unik dan mudah dibuat di rumah. Panduan lengkap ini dirancang agar mudah diikuti oleh siapa saja yang ingin mulai berkarya secara kreatif.
+    </p>
+    <a href="#">Lihat Proyek &rarr;</a>
+  </div>
+
+  <!-- Tautan Kembali -->
+  <div class="footer-nav">
+    <a href="#">Kembali ke Beranda</a>
+  </div>
+
+</body>
+</html>
